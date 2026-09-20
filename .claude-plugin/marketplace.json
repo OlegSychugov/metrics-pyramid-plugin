@@ -1,0 +1,10 @@
+{
+  "name": "metrics-pyramid-marketplace",
+  "owner": { "name": "OlegSychugov" },
+  "plugins": [
+    {
+      "name": "metrics-pyramid-plugin",
+      "source": "./"
+    }
+  ]
+}

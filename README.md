@@ -33,7 +33,7 @@ NSM подбирается через JTBD: какую проблему реша
 
 ```
 /plugin marketplace add OlegSychugov/metrics-pyramid-plugin
-/plugin install metrics-pyramid@metrics-pyramid-plugin
+/plugin install metrics-pyramid-plugin@metrics-pyramid-marketplace
 ```
 
 ### Вариант «просто skills»
