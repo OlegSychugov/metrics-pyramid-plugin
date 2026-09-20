@@ -1,0 +1,9 @@
+{
+  "name": "metrics-pyramid",
+  "version": "1.0.0",
+  "description": "Агент-продуктолог: строит 5-уровневую пирамиду метрик (Бизнес → Маржинальность → Лояльность → NSM → Качество), подбирает North Star Metric через JTBD и валидирует по чек-листу из 21 пункта.",
+  "author": { "name": "OlegSychugov" },
+  "homepage": "https://github.com/OlegSychugov/metrics-pyramid-plugin",
+  "license": "MIT",
+  "keywords": ["metrics", "north-star-metric", "product-management", "nsm"]
+}
