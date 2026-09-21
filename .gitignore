@@ -1,6 +1,5 @@
 node_modules/
 __pycache__/
-tools/metric-notes-grep/.venv/
 .obsidian/
 EVALS/runs/
 PROJECTS/*

@@ -15,35 +15,23 @@
 ## Навыки
 
 - `metrics-pyramid` — модельный навык: 5-уровневая пирамида метрик с пошаговым рабочим процессом
-- `new-pyramid` — user-invoked: полный workflow построения пирамиды для нового продукта (до Excel-артефакта)
+- `new-pyramid` — user-invoked: полный workflow построения пирамиды для нового продукта (до Markdown-артефакта)
 - `review-pyramid` — user-invoked: ревью готовой пирамиды по всем пунктам чек-листа
-- `extract-lesson` — user-invoked: сохранение урока из фидбека в Knowledge Graph
-- `excel` — работа с .xlsx файлами для оформления результатов
-
-## Память
-
-Агент использует Knowledge Graph Memory для накопления уроков. Правила работы с памятью и шаблоны сущностей — см. [`skills/metrics-pyramid/MEMORY.md`](skills/metrics-pyramid/MEMORY.md).
-
-**При старте каждой сессии:** `memory_read_graph` (полное чтение).
 
 ## Структура проекта
 
 ```
 skills/
-  metrics-pyramid/ — модельный навык (SKILL / REFERENCE / EXAMPLES / CHECKS / MEMORY)
+  metrics-pyramid/ — модельный навык (SKILL / REFERENCE / EXAMPLES / CHECKS)
   new-pyramid/     — построение пирамиды для нового продукта (user-invoked)
   review-pyramid/  — ревью готовой пирамиды (user-invoked)
-  extract-lesson/  — сохранение урока в память (user-invoked)
-  excel/           — работа с Excel
 METHODOLOGY/
   index/           — отполированные материалы (concepts_KG / glossary / heuristics / formulas)
 EVALS/             — регрессионные тестовые брифы и инструкция прогона
-tools/
-  metric-notes-grep/ — локальный MCP-сервер поиска по Markdown-базе
 PROJECTS/          — рабочие папки проектов пользователя (в репозитории только _template)
   _template/       — шаблон PROJECT.md
   {Проект}/
-    PROJECT.md     — карточка проекта (контекст, NSM, применённые уроки, артефакты)
+    PROJECT.md     — карточка проекта (контекст, NSM, артефакты)
     USER_CONTEST/  — входящие данные от пользователя
-    AGENT_RESULT/  — результаты работы агента (.xlsx)
+    AGENT_RESULT/  — результаты работы агента (.md)
 ```
